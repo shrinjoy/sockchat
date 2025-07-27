@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
 io.on("connection", (socket) => {
     console.log("user connected");
 
-
+//update
     socket.on("sendmessage", function (msg) {
         socket.broadcast.emit("msgrec", msg);
     })
